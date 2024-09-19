@@ -1,0 +1,42 @@
+[2024-09-19T00:46:52.383+0000] {processor.py:157} INFO - Started process (PID=25) to work on /opt/airflow/dags/reddit_day.py
+[2024-09-19T00:46:52.383+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_day.py for tasks to queue
+[2024-09-19T00:46:52.387+0000] {logging_mixin.py:151} INFO - [2024-09-19T00:46:52.387+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_day.py
+[2024-09-19T00:46:52.403+0000] {logging_mixin.py:151} INFO - [2024-09-19T00:46:52.395+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/reddit_day.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_day.py", line 10, in <module>
+    from pipelines.aws_s3_pipeline import upload_s3_pipeline
+ModuleNotFoundError: No module named 'pipelines.aws_s3_pipeline'
+[2024-09-19T00:46:52.404+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_day.py
+[2024-09-19T00:46:52.449+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_day.py took 0.070 seconds
+[2024-09-19T00:54:56.072+0000] {processor.py:157} INFO - Started process (PID=26) to work on /opt/airflow/dags/reddit_day.py
+[2024-09-19T00:54:56.076+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_day.py for tasks to queue
+[2024-09-19T00:54:56.078+0000] {logging_mixin.py:151} INFO - [2024-09-19T00:54:56.077+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_day.py
+[2024-09-19T00:54:56.089+0000] {logging_mixin.py:151} INFO - [2024-09-19T00:54:56.083+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/reddit_day.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_day.py", line 10, in <module>
+    from pipelines.aws_s3_pipeline import upload_s3_pipeline
+ModuleNotFoundError: No module named 'pipelines.aws_s3_pipeline'
+[2024-09-19T00:54:56.090+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_day.py
+[2024-09-19T00:54:56.108+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_day.py took 0.040 seconds
+[2024-09-19T00:55:26.370+0000] {processor.py:157} INFO - Started process (PID=27) to work on /opt/airflow/dags/reddit_day.py
+[2024-09-19T00:55:26.371+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_day.py for tasks to queue
+[2024-09-19T00:55:26.376+0000] {logging_mixin.py:151} INFO - [2024-09-19T00:55:26.376+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_day.py
+[2024-09-19T00:55:26.385+0000] {logging_mixin.py:151} INFO - [2024-09-19T00:55:26.383+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/reddit_day.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_day.py", line 10, in <module>
+    from pipelines.aws_s3_pipeline import upload_s3_pipeline
+ModuleNotFoundError: No module named 'pipelines.aws_s3_pipeline'
+[2024-09-19T00:55:26.386+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_day.py
+[2024-09-19T00:55:26.408+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_day.py took 0.042 seconds
