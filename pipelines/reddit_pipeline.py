@@ -28,7 +28,7 @@ def reddit_pipeline(file_name: str, subreddit: str, time_filter='day', limit=Non
     post_df = pd.DataFrame(posts)
     # Transforming the extracted data (e.g., cleaning or formatting)
     post_df = transform_data(post_df)
-    # Define the path to save the output CSV file and load the transformed data into it
+    # (loading) Define the path to save the output CSV file and load the transformed data into it
     file_path = f'{OUTPUT_PATH}/{file_name}.csv'
     load_data_to_csv(post_df, file_path)
 
