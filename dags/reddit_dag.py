@@ -6,11 +6,12 @@ from datetime import datetime
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 
+from pipelines.reddit_pipeline import reddit_pipeline
 # Adding the parent directory to the Python path
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from pipelines.aws_s3_pipeline import upload_s3_pipeline
-from pipelines.reddit_pipeline import reddit_pipeline
+
 
 # Setting the default arguments for the DAG, such as the owner & stating dates
 default_args = {
