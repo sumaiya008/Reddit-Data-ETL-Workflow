@@ -6,7 +6,16 @@ parser = configparser.ConfigParser()
 
 # Read the configuration file located at ../config/config.conf
 # The os.path.join and os.path.dirname(__file__) are used to create a relative path to the config file
-parser.read(os.path.join(os.path.dirname(__file__), '../config/config.conf'))
+#parser.read(os.path.join(os.path.dirname(__file__), '../config/config.conf'))
+
+# Use an absolute path to ensure that the file is being read correctly
+config_path = '/opt/airflow/config/config.conf'
+parser.read(config_path)
+
+# Check if the section [api_keys] exists
+if not parser.has_section('api_keys'):
+    raise Exception("The section [api_keys] is missing in the configuration file")
+
 
 # Retrieve the Reddit API credentials from the 'api_keys' section of the configuration file
 SECRET = parser.get('api_keys', 'reddit_secret_key')

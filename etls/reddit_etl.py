@@ -5,7 +5,7 @@ import pandas as pd
 import praw # PRAW is a Python package for accessing the Reddit API
 from praw import Reddit
 
-# Importing a constant list of Reddit post fields to extract
+#Importing a constant list of Reddit post fields to extract
 from utils.constants import POST_FIELDS
 
 # Function to connect to the Reddit API using PRAW
@@ -32,7 +32,7 @@ def extract_posts(reddit_instance: Reddit, subreddit: str, time_filter: str, lim
     posts = subreddit.top(time_filter=time_filter, limit=limit)
 
     post_lists = []         # Initialize an empty list to store extracted posts
-
+    
     # Iterate over each post retrieved
     for post in posts:
         post_dict = vars(post)        # Convert the post object into a dictionary

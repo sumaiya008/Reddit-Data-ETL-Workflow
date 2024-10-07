@@ -24,7 +24,7 @@ def reddit_pipeline(file_name: str, subreddit: str, time_filter='day', limit=Non
     instance = connect_reddit(CLIENT_ID, SECRET, 'Airscholar Agent')
     # Extracting posts from the specified subreddit using the given time filter and limit
     posts = extract_posts(instance, subreddit, time_filter, limit)
-    #Converting the extracted posts into a pandas DataFrame for easy manipulation
+    # Converting the extracted posts into a pandas DataFrame for easy manipulation
     post_df = pd.DataFrame(posts)
     # Transforming the extracted data (e.g., cleaning or formatting)
     post_df = transform_data(post_df)
